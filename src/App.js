@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class App extends Component {
   render() {
-    return <h1>Hello Ram!</h1>;
+    return <h1>Hello World!</h1>;
   }
 }
 
