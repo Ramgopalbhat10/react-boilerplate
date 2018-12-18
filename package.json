@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
     "dev:hot": "npm run dev -- --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "ramgopal",
   "license": "ISC",
@@ -18,8 +18,14 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
     "css-loader": "^2.0.1",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "react-testing-library": "^5.4.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.27.1",
     "webpack-bundle-analyzer": "^3.0.3",
