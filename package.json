@@ -11,6 +11,11 @@
     "format": "pretty-quick",
     "lint": "eslint ./"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+    }
+  },
   "author": "ramgopal",
   "license": "ISC",
   "devDependencies": {
@@ -27,7 +32,9 @@
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "css-loader": "^2.0.1",
     "eslint": "^5.10.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.3.0",
     "jest": "^23.6.0",
     "jest-dom": "^3.0.0",
     "prettier": "^1.15.3",
